@@ -1,5 +1,12 @@
 # AdbControl
 computer control android device
+建议使用PC键盘的数字键盘来模拟
++ 方向键（2、4、6、8）
++ 确定键（5）
++ 返回键（1）
++ HOME键（3）
+
+![数字键盘](https://github.com/liuxk99/AdbControl/blob/master/res/dpad.jpg)
 
 # Usage
 ```
