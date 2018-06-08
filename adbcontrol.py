@@ -85,7 +85,17 @@ def move(ch):
     pass
 
 
+key_dict = {19: 'KEY_UP',
+            20: 'KEY_DOWN',
+            21: 'KEY_LEFT',
+            22: 'KEY_RIGHT',
+            23: 'KEY_DPAD_CENTER',
+            4: 'KEY_BACK',
+            3: 'KEY_HOME'}
+
+
 def input_event(code):
+    print("adb shell input keyevent " + key_dict[code])
     os.system('adb shell input keyevent ' + str(code))
 
 
