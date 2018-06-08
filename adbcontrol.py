@@ -35,14 +35,14 @@ def connect_device(device):
     os.system('sleep 1')
     os.system('adb connect ' + device)
 
-    os.system('sleep 1')
-    os.system('adb root')
-
-    os.system('sleep 1')
-    os.system('adb connect ' + device)
-
-    os.system('sleep 1')
-    os.system('adb remount')
+    # os.system('sleep 1')
+    # os.system('adb root')
+    #
+    # os.system('sleep 1')
+    # os.system('adb connect ' + device)
+    #
+    # os.system('sleep 1')
+    # os.system('adb remount')
 
     pass
 
@@ -104,7 +104,6 @@ def input_event(code):
 
 def main(argv):
     print('-------- AdbControl: adb tools wrapped by Python  -------')
-    print('----------- For UserDebug Build with su ----------------')
 
     # host or ip address
     device = None
