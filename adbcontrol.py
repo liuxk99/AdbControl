@@ -5,6 +5,9 @@ Author: liulei
 
 Version: 1.0
 
+Author: Thomas Liu(liuxk99@gmail.com)
+Version: 1.1
+
 Main Function:
   PC control Android
     The script intercepts the pc's keyboard input and sends the corresponding 
@@ -22,9 +25,9 @@ import time
 
 def connect_device(device):
     if device is None:
-        device = input('please input android device ip: ')
+        device = input('please input android device ip or host name: ')
         if device == '':
-            print('emppty ip')
+            print('ERROR: empty ip or host name!')
             exit()
 
     os.system('adb disconnect')
@@ -100,6 +103,9 @@ def input_event(code):
 
 
 def main(argv):
+    print('-------- AdbControl: adb tools wrapped by Python  -------')
+    print('----------- For UserDebug Build with su ----------------')
+
     # host or ip address
     device = None
     if len(argv) > 0:
