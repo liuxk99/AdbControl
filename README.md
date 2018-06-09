@@ -15,7 +15,6 @@
 ```
 thomas@XancL03:~/bin/adb_control$ ./adbcontrol.py x1
 -------- AdbControl: adb tools wrapped by Python  -------
------------ For UserDebug Build with su ----------------
 disconnected everything
 connected to x1:5555
 --------------------------------------------------------
