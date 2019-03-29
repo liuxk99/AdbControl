@@ -59,6 +59,18 @@ def adbc(host):
     os.system('sleep 1')
     os.system(ADB + ' ' + serial + 'remount')
 
+    # remount /tvservice
+    os.system('sleep 1')
+    cmd = ADB + ' ' + serial + 'shell mount -o rw,remount' + ' /tvservice'
+    print(cmd)
+    os.system(cmd)
+
+    # remount /tvconfig
+    os.system('sleep 1')
+    cmd = ADB + ' ' + serial + 'shell mount -o rw,remount' + ' /tvconfig'
+    print(cmd)
+    os.system(cmd)
+
     pass
 
 
